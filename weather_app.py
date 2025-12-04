@@ -3,7 +3,7 @@ from tkinter import IntVar
 import requests
 from datetime import datetime
 
-API_KEY = '0f1bd554fff7d86e116de1094a6778c4'
+API_KEY = 'your_api_key_here'
 CURRENT_URL = 'https://api.openweathermap.org/data/2.5/weather'
 DAYS_URL = "https://api.openweathermap.org/data/2.5/forecast/daily"
 
@@ -134,7 +134,7 @@ btn.pack(pady=15)
 right_frame = ctk.CTkFrame(root)
 right_frame.pack(side="left", fill="both", expand=True)
 
-result_label = ctk.CTkLabel(right_frame, font=("Segoe UI", 16), justify="center")
+result_label = ctk.CTkLabel(right_frame, text="", font=("Segoe UI", 16), justify="center")
 result_label.pack(pady=10, padx=10, fill="both")
 
 text_area = ctk.CTkTextbox(right_frame, font=("Segoe UI", 13))
